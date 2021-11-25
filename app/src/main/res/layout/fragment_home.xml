@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/sun" />
+
+        <com.cunoraz.continuouscrollable.ContinuousScrollableImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:direction="right"
+            app:duration="12000"
+            app:imageSrc="@drawable/clouds"
+            app:scaleType="centerInside" />
+
+
+        <com.cunoraz.continuouscrollable.ContinuousScrollableImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            app:direction="left"
+            app:duration="10000"
+            app:imageSrc="@drawable/aircraft_real"
+            app:scaleType="centerInside" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/park" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/character_img"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/_65sdp"
+                    android:layout_marginBottom="@dimen/_90sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pull_1" />
+
+                <ImageView
+                    android:id="@+id/tap_me_img"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/_110sdp"
+                    android:layout_marginBottom="@dimen/_155sdp"
+                    android:src="@drawable/tap_me"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
